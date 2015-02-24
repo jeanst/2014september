@@ -1,0 +1,40 @@
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:paddingRight="@dimen/activity_horizontal_margin"
+         >
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/manufacturer"
+
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/carnumber"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/year"
+            android:textSize="15sp"
+            />
+
+         <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/km"
+            android:textSize="15sp"           />
+
+
+
+    </LinearLayout>

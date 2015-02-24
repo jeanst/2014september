@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CarsAgencyDB</string>
+    <string name="hello_world"> -LEASING CAR AGENCY-</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

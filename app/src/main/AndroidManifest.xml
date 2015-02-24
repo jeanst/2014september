@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.carsagencydb" >
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListCars"
+            android:label="ListDisplay" >
+            <intent-filter>
+                <action android:name="com.example.carsagencydb.ListDisplay" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListOwners"
+            android:label="OwnerListDisplay" >
+            <intent-filter>
+                <action android:name="com.example.carsagencydb.OwnerListDisplay" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddCarDialog"
+            android:label="AddCarDialog" >
+            <intent-filter>
+                <action android:name="com.example.carsagencydb.AddCarDialog" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayOneCar"
+            android:label="DisplayOneCar" >
+            <intent-filter>
+                <action android:name="com.example.carsagencydb.DisplayOneCar" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Add1Bid"
+            android:label="Add1Bid" >
+            <intent-filter>
+                <action android:name="com.example.carsagencydb.Add1Bid" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".SmsSendBroadCastReceiver">
+            <intent-filter>
+                <action android:name="SMS_SENT">
+
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SmsDeliveredBroadCastReceiver">
+            <intent-filter>
+                <action android:name="SMS_DELIVERED">
+
+                </action>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

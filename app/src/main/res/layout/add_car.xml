@@ -1,0 +1,273 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Model:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/carmodel"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Owner name:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ownername"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Car Number:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/carnumber"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Owner Tel:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ownertel"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Year:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/caryear"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Km:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/km"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Nr. of Seats:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/nrseats"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="LevyPrice:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/levyprice"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Lising/Rental:"
+            android:textSize="15sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btnyes1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/btnno1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="no" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Air Bags:"
+            android:textSize="15sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btnyes2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/btnno2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="no" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+
+            android:onClick="onClick"
+            android:text="IT IS CORRECT!!!"
+            android:textSize="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back"
+                android:onClick="btnReturn"
+                android:src="@drawable/backicon"
+                />
+
+    </LinearLayout>
+
+</LinearLayout>

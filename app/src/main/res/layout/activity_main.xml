@@ -1,0 +1,276 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity"
+
+    android:id="@+id/mainmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=" -LEASING CAR AGENCY-"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ALL CARS MENU"
+                android:textColor="@color/blue"
+                android:textSize="22dp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btncar1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="List Cars"
+                    android:background="@color/bleu"
+                    android:onClick="onClick" />
+
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnown1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="List Owners"
+                    android:background="@color/bleu"
+                    android:onClick="onClick" />
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/getcarnr"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/bleu"
+            android:onClick="onClick"
+            android:text="Enter Car License:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/enteredcarnumber"
+            android:layout_width="150dp"
+            android:inputType="phone"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ONE CAR MENUS"
+                android:textColor="@color/blue"
+                android:textSize="22dp" />
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btncar3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Display"
+                    android:textAlignment="center"
+                    android:background="@color/bleu"
+                    android:onClick="onClick" />
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnbid2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add a Bid"
+                    android:textAlignment="center"
+                    android:background="@color/bleu"
+                    android:onClick="onClick" />
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btncar4"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Remove"
+                    android:textAlignment="center"
+                    android:background="@color/lightred"
+                    android:onClick="onClick" />
+
+            </TableRow>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/btnyes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onClick"
+                            android:text="yes" />
+
+                        <RadioButton
+                            android:id="@+id/btnno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onClick"
+                            android:text="no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btncar2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add a Car"
+                    android:background="@color/bleu"
+                    android:onClick="onClick" />
+
+            </TableRow>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="150dp"
+                    android:text="  SAVE!"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkgreen"
+
+                    android:onClick="onClick" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
